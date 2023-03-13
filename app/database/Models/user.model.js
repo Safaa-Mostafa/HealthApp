@@ -52,15 +52,11 @@ const userSchema = mongoose.Schema(
     profilePicture: {
      public_id :{
       type:String,
-      required: function () {
-        return this.isDoctor == true;
-      },
+     
      },
      url:{
       type:String,
-      required: function () {
-        return this.isDoctor == true;
-      },
+     
      }
     },
     RandomNumber: {
@@ -91,15 +87,11 @@ const userSchema = mongoose.Schema(
     practiceLicense:{
       public_id :{
         type:String,
-        required: function () {
-          return this.isDoctor == true;
-        },
+       
        },
        url:{
         type:String,
-        required: function () {
-          return this.isDoctor == true;
-        },
+      
        }
     }
   },
