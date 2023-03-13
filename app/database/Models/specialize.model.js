@@ -17,15 +17,11 @@ const specializeSchema = new mongoose.Schema(
     img: {
       public_id :{
        type:String,
-       required: function () {
-         return this.isDoctor == true;
-       },
+      
       },
       url:{
        type:String,
-       required: function () {
-         return this.isDoctor == true;
-       },
+     
       }
      },
   },
